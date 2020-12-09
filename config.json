@@ -1,0 +1,24 @@
+{
+    "params":
+    {
+        "local_server":"true",
+        "local_uri":"mysql://root:@localhost/coding-thunder",
+        "pd_uri":"mysql://root:@localhost/coding-thunder",
+        "fb_url":"https://facebook.com/codingthunder",
+        "tw_url":"https://twitter.com/codingthunder",
+        "gh_url":"https://github.com/codingthunder",
+        "blog_title":"Coding Thunder",
+        "navbar_title":"TheCodingThunder",
+        "tagline":"The Blog liked by Programmers",
+        "title":"The Coding Thunder",
+        "gmail-user":"rfautomaticmailbot@gmail.com",
+        "gmail-password":"automatebotoffahad",
+        "send_to":"riyad9949@gmail.com",
+        "author":"RF Fahad Islam",
+        "about_text":"This is created by Fahad. #CodeWithHarry",
+        "no_of_posts":1,
+        "admin_user":"fahad",
+        "admin_password":"iamfahad",
+        "upload_location":"C:\\Users\\rashedul\\Documents\\Python Codes\\Flask App\\Blog\\static"
+    }
+}

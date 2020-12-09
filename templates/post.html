@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block body %}
+{% block title %}<title>Posts</title>{% endblock %}
+<!-- Page Header -->
+{% set fname="static/img/"+post.img_file %}
+<header class="masthead" style="background-image: url('{{fname}}')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1>{{post.title}}</h1>
+          <h2 class="subheading">{{post.tagline}}</h2>
+          <span class="meta">Posted by
+            <a href="#">Author</a>
+            on {{post.date}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>{{post.content}}</p>
+      </div>
+    </div>
+</article>
+<form action="/comment">
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea">Comments</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+</form>
+
+{% endblock %}
